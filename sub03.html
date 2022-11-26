@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoppingmall design</title>
+    <link rel="stylesheet" href="./common/css/reset.css">
+    <link rel="stylesheet" href="./common/css/style2.css">
+</head>
+
+<body>
+    <input id="panel-1-ctrl" class="panel-radios" type="radio" name="tab-radios" checked>
+    <input id="panel-2-ctrl" class="panel-radios" type="radio" name="tab-radios">
+    <input id="panel-3-ctrl" class="panel-radios" type="radio" name="tab-radios">
+    <input id="panel-4-ctrl" class="panel-radios" type="radio" name="tab-radios">
+    <input id="panel-5-ctrl" class="panel-radios" type="radio" name="tab-radios">
+    <input id="nav-ctrl" class="panel-radios" type="checkbox" name="nav-checkbox">
+
+    <header id="introduction">
+        <h1>SHOPPINGMALL DESIGN</h1>
+    </header>
+
+    <ul id="tabs-list">
+        <label id="open-nav-label" for="nav-ctrl"></label>
+        
+        <li id="li-for-panel-1"><label class="panel-label" for="panel-1-ctrl">메인비주얼</label></li>
+        <li id="li-for-panel-2"><label class="panel-label" for="panel-2-ctrl">상세페이지1</label></li>
+        <li id="li-for-panel-3"><label class="panel-label" for="panel-3-ctrl">상세페이지2</label></li>
+        <li id="li-for-panel-4"><label class="panel-label" for="panel-4-ctrl">상세페이지3</label></li>
+        <li id="li-for-panel-5" class="last"><label class="panel-label" for="panel-5-ctrl">SNS디자인</label></li>
+       
+        <label id="close-nav-label" for="nav-ctrl">Close</label>
+    </ul>
+
+    <article id="panels">
+        <div class="container">
+            <section id="panel-1">
+                <main>
+                    <div>
+                        <p>
+                            <section class="img-gallery-magnific" >
+                                <img src="./common/img/portfolio/visual_00.jpg" alt="">
+                                   <img src="./common/img/portfolio/visual_01.jpg" alt="">
+                                   <img src="./common/img/portfolio/visual_02.jpg" alt="">
+                                   <img src="./common/img/portfolio/visual_03.jpg" alt="">
+                                   <img src="./common/img/portfolio/visual_04.jpg" alt="">
+                                   <img src="./common/img/portfolio/visual_05.jpg" alt="">
+                                   <img src="./common/img/portfolio/visual_06.jpg" alt="">
+                            </section>
+                        </p>
+                    </div>
+                    
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js">
+                    </script>
+                    <script>
+                        $(document).ready(function () {
+                            $('.image-popup-vertical-fit').magnificPopup({
+                                type: 'image',
+                                mainClass: 'mfp-with-zoom',
+                                gallery: {
+                                    enabled: true
+                                },
+                                zoom: {
+                                    enabled: true,
+                                    duration: 300, // duration of the effect, in milliseconds
+                                    easing: 'ease-in-out', // CSS transition easing function
+                                    opener: function (openerElement) {
+                                        return openerElement.is('img') ? openerElement : openerElement.find('img');
+                                    }
+                                }
+                            });
+                        });
+                    </script>
+                </main>
+            </section>
+            <section id="panel-2">
+                <main>
+                    <img src="./common/img/portfolio/E181119_01.jpg" alt="">
+                    <img src="./common/img/portfolio/E181119_02.gif" alt="">
+                    <img src="./common/img/portfolio/E181119_03.gif" alt="">
+                    <img src="./common/img/portfolio/E181119_04.jpg" alt="">
+                </main>
+            </section>
+            <section id="panel-3">
+                <main>
+                    <h3>중국-상품상세페이지</h3><br>
+                    <img src="./common/img/portfolio/detail/24k-img.jpg" alt=""><br>
+                    <br><br><br>
+                    <h3>중국-이벤트페이지</h3><br>
+                    <img src="./common/img/portfolio/detail/201208_1212_01.jpg" alt="">
+
+                </main>
+            </section>
+            <section id="panel-4">
+                <main>
+                    <img src="./common/img/portfolio/detail/210104_EV_900.jpg" alt="">
+                </main>
+            </section>
+            <section id="panel-5" >
+                <main>
+                    <img src="./common/img/portfolio/detail/sns-youtube.png" alt=""><br>
+                    <img src="./common/img/portfolio/detail/sns-instargram1.png" alt=""><br>
+                    <img src="./common/img/portfolio/detail/sns-instargram2.png" alt=""><br>
+                    <img src="./common/img/portfolio/detail/sns-instargram3.png" alt=""><br>
+                    <img src="./common/img/portfolio/detail/sns-facebook.png" alt=""><br>
+                </main>
+            </section>
+
+        </div>
+    </article>
+    <div id="stop" class="scrollTop">
+        <span><a href="#">Top</a></span>
+    </div>
+</body>
+
+</html>

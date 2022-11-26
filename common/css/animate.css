@@ -1,0 +1,497 @@
+/* planet-moving */
+@-moz-keyframes planet-moving {
+  0% {
+    top: 30%;
+  }
+  50% {
+    top: 31%;
+  }
+  100% {
+    top: 30%;
+  }
+}
+@-ms-keyframes planet-moving {
+  0% {
+    top: 30%;
+  }
+  50% {
+    top: 31%;
+  }
+  100% {
+    top: 30%;
+  }
+}
+@keyframes planet-moving {
+  0% {
+    top: 30%;
+  }
+  50% {
+    top: 31%;
+  }
+  100% {
+    top: 30%;
+  }
+}
+
+/* scroll-moving */
+
+@keyframes sdb10 {
+  0% {
+   
+    opacity: 0;
+    
+  }
+
+  40% {
+    transform: translate(0, -1px);
+    opacity: 0;
+
+  }
+
+  80% {
+    
+    opacity: 1;
+
+  }
+
+  100% {
+    opacity: 0;
+    height: : 1px;
+    transform: translate(0, 20px);
+
+  }
+}
+
+/* water wave */
+
+
+@-webkit-keyframes wave-front {
+  100% {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+}
+
+@keyframes wave-front {
+  100% {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+}
+@-webkit-keyframes wave-back {
+  100% {
+    -webkit-transform: translate(50%, 0);
+            transform: translate(50%, 0);
+  }
+}
+@keyframes wave-back {
+  100% {
+    -webkit-transform: translate(50%, 0);
+            transform: translate(50%, 0);
+  }
+}
+
+/* meteor */
+
+
+@-webkit-keyframes $animationName {
+  0% {
+    opacity: 0;
+    top: 50px;
+    left: 1250px;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    left: 800px;
+    top: 550px;
+    opacity: 0;
+  }
+}
+@-moz-keyframes meteor-drop {
+  0% {
+    opacity: 0;
+    top: 50px;
+    left: 1250px;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    left: 800px;
+    top: 550px;
+    opacity: 0;
+  }
+}
+@-ms-keyframes meteor-drop {
+  0% {
+    opacity: 0;
+    top: 50px;
+    left: 1250px;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    left: 800px;
+    top: 550px;
+    opacity: 0;
+  }
+}
+@keyframes meteor-drop {
+  0% {
+    opacity: 0;
+    top: -50px;
+    left: 450px;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    left: 90px;
+    top: 250px;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes $animationName {
+  0% {
+    opacity: 0;
+    top: 250px;
+    left: 0px;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    left: 900px;
+    top: 650px;
+    opacity: 0;
+  }
+}
+@-moz-keyframes meteor-drop2 {
+  0% {
+    opacity: 0;
+    top: 150px;
+    left: 1350px;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    left: 900px;
+    top: 650px;
+    opacity: 0;
+  }
+}
+@-ms-keyframes meteor-drop2 {
+  0% {
+    opacity: 0;
+    top: 150px;
+    left: 1350px;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    left: 900px;
+    top: 650px;
+    opacity: 0;
+  }
+}
+@keyframes meteor-drop2 {
+  0% {
+    opacity: 0;
+    top: 150px;
+    left: 950px;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    left: 500px;
+    top: 650px;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes $animationName {
+  0% {
+    top: 30%;
+  }
+  50% {
+    top: 31%;
+  }
+  100% {
+    top: 30%;
+  }
+}
+@-moz-keyframes planet-moving {
+  0% {
+    top: 30%;
+  }
+  50% {
+    top: 31%;
+  }
+  100% {
+    top: 30%;
+  }
+}
+@-ms-keyframes planet-moving {
+  0% {
+    top: 30%;
+  }
+  50% {
+    top: 31%;
+  }
+  100% {
+    top: 30%;
+  }
+}
+@keyframes planet-moving {
+  0% {
+    top: 30%;
+  }
+  50% {
+    top: 31%;
+  }
+  100% {
+    top: 30%;
+  }
+}
+@-webkit-keyframes $animationName {
+  0% {
+    top: 30%;
+  }
+  50% {
+    top: 31%;
+  }
+  100% {
+    top: 30%;
+  }
+}
+@-moz-keyframes planet-moving2 {
+  0% {
+    top: 30%;
+  }
+  50% {
+    top: 31%;
+  }
+  100% {
+    top: 30%;
+  }
+}
+@-ms-keyframes planet-moving2 {
+  0% {
+    top: 30%;
+  }
+  50% {
+    top: 31%;
+  }
+  100% {
+    top: 30%;
+  }
+}
+@keyframes planet-moving2 {
+  0% {
+    top: 30%;
+  }
+  50% {
+    top: 31%;
+  }
+  100% {
+    top: 30%;
+  }
+}
+@-webkit-keyframes $animationName {
+  0% {
+    height: 20px;
+    top: -7px;
+  }
+  50% {
+    height: 10px;
+    top: -3px;
+  }
+  100% {
+    height: 20px;
+    top: -7px;
+  }
+}
+@-moz-keyframes twinkle-height {
+  0% {
+    height: 20px;
+    top: -7px;
+  }
+  50% {
+    height: 10px;
+    top: -3px;
+  }
+  100% {
+    height: 20px;
+    top: -7px;
+  }
+}
+@-ms-keyframes twinkle-height {
+  0% {
+    height: 20px;
+    top: -7px;
+  }
+  50% {
+    height: 10px;
+    top: -3px;
+  }
+  100% {
+    height: 20px;
+    top: -7px;
+  }
+}
+@keyframes twinkle-height {
+  0% {
+    height: 20px;
+    top: -7px;
+  }
+  50% {
+    height: 10px;
+    top: -3px;
+  }
+  100% {
+    height: 20px;
+    top: -7px;
+  }
+}
+@-webkit-keyframes $animationName {
+  0% {
+    width: 20px;
+    left: 0px;
+  }
+  50% {
+    width: 10px;
+    left: 5px;
+  }
+  100% {
+    width: 20px;
+    left: 0px;
+  }
+}
+@-moz-keyframes twinkle-width {
+  0% {
+    width: 20px;
+    left: 0px;
+  }
+  50% {
+    width: 10px;
+    left: 5px;
+  }
+  100% {
+    width: 20px;
+    left: 0px;
+  }
+}
+@-ms-keyframes twinkle-width {
+  0% {
+    width: 20px;
+    left: 0px;
+  }
+  50% {
+    width: 10px;
+    left: 5px;
+  }
+  100% {
+    width: 20px;
+    left: 0px;
+  }
+}
+@keyframes twinkle-width {
+  0% {
+    width: 20px;
+    left: 0px;
+  }
+  50% {
+    width: 10px;
+    left: 5px;
+  }
+  100% {
+    width: 20px;
+    left: 0px;
+  }
+}
+@-webkit-keyframes $animationName {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes twinkle {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-ms-keyframes twinkle {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes twinkle {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* loading */
+
+@keyframes loader {
+  15% {
+    transform: translateX(0);
+  }
+  45% {
+    transform: translateX(230px);
+  }
+  65% {
+    transform: translateX(230px);
+  }
+  95% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* text */
+
+@keyframes drawPath {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

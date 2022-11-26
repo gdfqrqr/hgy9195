@@ -1,0 +1,1043 @@
+@import url(
+'https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300&display=swap');
+
+body {
+ color: #222;
+ min-width: 320px;
+}
+
+.scrollTop {
+  position: fixed;
+  right: 2%;
+  bottom: 0px;
+  background-color: rgba(0,0,0,.4);
+  opacity: 0;
+  border-radius: 20%;
+
+  transition: all 0.4s ease-in-out 0s;
+  z-index: 2;
+}
+
+.scrollTop a {
+  padding: 14px 16px;
+  font-size: 18px;
+  color: #222;
+  display: inline-block;
+}
+
+.scrollTop svg {
+    fill: #fff;
+}
+
+.Wrap {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+/* header */
+
+.headerWrap {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    font: 12px / 1 'aritaburi';
+    position: relative;
+}
+
+#header {
+    max-width: 1280px;
+    height: 156px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#header .logo {
+    width: 138px;
+    height: 80px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    position: absolute;
+    display: inline-block;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+.bar {
+    display: none;
+}
+
+.input {
+    border: solid 2px #4e0074;
+    border-radius: 30px;
+    width: 50%;
+    max-width: 570px;
+    display: inline-block;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translateY(-50%);
+}
+
+input[type="search"] {
+    margin-left: 20px;
+    box-sizing: border-box;
+    font-family: "Notosans";
+    width: 88%;
+    height: 100%;
+    border: 0;
+}
+
+.input>button {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* gnb */
+
+
+#gnb {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+}
+
+#gnb>li {
+    float: left;
+}
+
+#gnb li:nth-child(2){
+    padding: 3px 0 0 5px;
+    margin: 0 40px;
+}
+
+#gnb>li>a {
+    display: inline-block;
+}
+
+
+/* category menu */
+.NavWrap {
+    width: 100%;
+    height: 57px;
+    border-bottom: 1px solid #ccc;
+}
+
+.NavWrap_m {
+    display: none;
+}
+
+.Nav {
+    position: relative;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navGnb {
+    width: calc(100% - 222px);
+    left: 0;
+    top: 0;
+}
+
+.navGnb>ul:hover {
+    color: #4e0074;
+}
+
+.category:hover {
+    background: #F7F7F7;
+}
+
+.navGnb ul {
+    font: 600 20px / 1 'Notosans';
+    position: relative;
+    border-left: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.navGnb ul li {
+    float: left;
+}
+
+.navGnb ul li:not(.category) {
+    width: calc(20% - 41.8px);
+}
+
+.navGnb ul li:nth-child(4) a{
+    color: #5e297c;
+} 
+
+.navGnb ul li a {
+    display: block;
+    padding: 19px 0px;
+    color: #222;
+    text-align: center;
+}
+
+
+li.category {
+    width: 209px;
+    height: 56px;
+    border-right: 1px solid #ccc;
+    text-align: center;
+    padding: 19px 0 0 15px;
+    position: relative;
+    transition: all .5s;
+    top: 1px;
+}
+
+li.category svg {
+    position: absolute;
+    left: 22px;
+    fill: #5e297c;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navLnb {
+    position: relative;
+    right: 0;
+    width: 222px;
+    height: 100%;
+}
+
+.navLnb ul {
+    top: 50%;
+    right: 0;
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+.navLnb ul li {
+    float: left;
+}
+
+.navLnb ul li::before {
+    content: 'l';
+    clear: both;
+    display: inline-block;
+    color: #ccc;
+    position: absolute;
+    margin: 0px 0 0 10px;
+}
+
+.navLnb ul li a {
+    display: block;
+    margin-left: 20px;
+    color: #999;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.navLnb ul li:first-child::before {
+    content: '';
+}
+
+.sprite {
+    background: url('../img/market_kurly/icon.png') no-repeat -186px -173px;
+    width: 6px;
+    height: 4px;
+    float: right;
+    margin: 8px 0 0 4px;
+
+}
+
+.categoryWrap {
+    width: 210px;
+    height: 568px;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    z-index: 2;
+    background: #fff;
+}
+
+.categoryWrap>ul>li:hover {
+    background: #F7F7F7;
+    color: #4e0074;
+    font-weight: bold;
+}
+
+.con1 {
+    width: 100%;
+    padding-left: 18px;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.con1>p {
+    float: left;
+    position: absolute;
+    left: 30%;
+    top: 12px;
+    font-weight: 600;
+}
+
+.con1:first-child {
+    padding: 7px 0px 0px 26px;
+}
+
+.con1:hover {
+    background: #F7F7F7;
+}
+
+.categoryWrap>ul>li>span {
+    width: 100%;
+    height: 38px;
+    display: block;
+    text-align: left;
+    font: 14px / 1 'Notosans';
+}
+
+.conWrap {
+    position: relative;
+}
+
+.categoryLayer {
+    background: #F7F7F7;
+    border: 1px solid #ccc;
+    position: absolute;
+    left: 208px;
+    top: -1px;
+    width: 200px;
+    font: 14px / 1 'Notosans';
+    text-decoration: none;
+    height: 568px;
+    display: none;
+    border-left: 0;
+}
+
+.categoryLayer>li:first-child {
+    padding-top: 8px;
+}
+
+.categoryLayer>li>a {
+    display: block;
+    padding: 0 0 24px 10px;
+}
+
+.categoryLayer>li>a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #4e0074;
+}
+
+.sectionWrap {
+    overflow: hidden;
+    width: 100%;
+    background: #fdfdfd;
+    margin: 0 auto;
+}
+
+
+
+/* content */
+
+
+.sectionWrap {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+
+}
+.banner-slide{
+    position: relative;
+}
+
+.next-container{
+    width: 100%;
+    max-width: 1280px;
+    height: 567px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-left: 210px;
+    z-index: 1;
+}
+.b-next{
+    width: 80px;
+    height: 80px;
+    background: rgba(0,0,0, .3);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.b-prev{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.swiper-button-next{
+    left: 33px;
+    --swiper-navigation-size:34px;
+}
+.swiper-button-prev{
+    left: 25px;
+    --swiper-navigation-size:34px;
+
+}
+.swiper-button-next,.swiper-button-prev{
+    color: #fff
+}
+
+.scon-twol {
+    background: url(../img/market_kurly/content1.jpg) no-repeat bottom;
+    grid-area: 1/1/3/2;
+    background-color: #dbdbdb;
+}
+
+.scon-one {
+    border: 1px solid #ccc;
+    float: left;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-repeat: no-repesat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.scon-twor {
+    background: url(../img/market_kurly/content4.jpg) no-repeat top;
+    grid-area: 1/4/3/5;/* top/left/bottom/right 사이 값을 묶어라 */
+}
+
+.span01 {
+    width: 278px;
+    height: 52px;
+    position: relative;
+}
+
+.scon3_txt01 {
+    width: 105%;
+}
+
+.secWrap {
+    max-width: 1280px;
+    width: 100%;
+    margin: 17px auto;
+    text-align: center;
+    overflow: hidden;
+    display: grid;
+    gap: 7px;
+    grid-template-columns: repeat(4, 1fr);/*가로*/
+    grid-template-rows: repeat(3, 236px);/*세로*/
+}
+
+.secWrap > div {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+}
+
+.secWrap div:nth-child(10){
+    background-color: #cdd1da
+}
+
+.secWrap div h1 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 0px 20px 0px;
+}
+
+.scon_con1,
+.scon_con2 {
+    overflow: hidden;
+    display: inline-block;
+    width: calc(100% - 40px);
+    margin: 0px 25px;
+}
+
+.scon_con2 {
+    position: relative;
+    top: 97%;
+    transform: translateY(-100%);
+}
+
+.scon span {
+    float: left;
+    margin-left: 15px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.scon_con1_img {
+    float: left;
+    text-align: left;
+    width: calc(50% - 14px);
+    margin-right: 14px;
+}
+
+.scon_con1_img:last-child {
+    margin-right: 0px;
+    margin-left: 5px;
+}
+
+.scon_con1_img img {
+    width: 100%;
+}
+
+.scon_con1 span,
+.scon_con3 span,
+.scon_con5 span {
+    text-align: left;
+}
+
+.scon_con2 span img {
+    margin: 306px 20px 0 10px;
+}
+
+.scon_con1 h2,
+.scon_con2 h2,
+.scon_con3 h2,
+.scon_con4 h2,
+.scon_con5 h2 {
+    font: 14px/1.5 'arial';
+}
+
+.scon_con1 p,
+.scon_con2 p,
+.scon_con3 p,
+.scon_con4 p,
+.scon_con5 p {
+    font: bold 14px/1.2 'arial'
+}
+
+.scon_con1 h3,
+.scon_con2 h3,
+.scon_con3 h3,
+.scon_con4 h3,
+.scon_con5 h3 {
+    font: 12px /1.2 'arial';
+    color: #ccc;
+    text-decoration: line-through;
+}
+
+.review {
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.review .review-title {
+    position: relative;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.main {
+  width: 1280px;
+  display:block;
+  margin:0 auto;
+  padding-top: 20px;
+  overflow: hidden;
+}
+
+.main .swiper-wrapper {
+    /* 
+     * 1. linear : 전환(transition) 효과가 처음부터 끝까지 일정한 속도로 진행됩니다.
+     * 2. ease : 기본값으로, 전환(transition) 효과가 천천히 시작되어, 그다음에는 빨라지고, 마지막에는 다시 느려집니다.
+     * 3. ease-in : 전환(transition) 효과가 천천히 시작됩니다.
+     * 4. ease-out : 전환(transition) 효과가 천천히 끝납니다.
+     * 5. ease-in-out : 전환(transition) 효과가 천천히 시작되어, 천천히 끝납니다.
+     * 6. cubic-bezier(n,n,n,n) : 전환(transition) 효과가 사용자가 정의한 cubic-bezier 함수에 따라 진행됩니다.
+    */
+    transition-timing-function: ease-in-out;
+}
+.main .swiper-wrapper .swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
+
+h4 {
+   margin: 10px;
+   padding: 2%;
+   position: relative;
+   text-align: center;
+}
+
+.inst_txt {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.inst_txt>h3 {
+    font: 600 18px/3 'Notosans';
+}
+
+.span>span {
+    font: 16px/ 2 'Notosans';
+    margin-right: 20px;
+    color: #4e0074;
+
+}
+
+.inst_txt>span:last-child {
+    margin-right: 0;
+}
+
+
+
+/* footer */
+footer {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 100%;
+    margin-bottom: 30px;
+}
+
+.noticeWrap {
+    margin: 30px 0;
+    border-top: 2px solid #8a8989;
+    border-bottom: 1px solid #8a8989;
+    line-height: 43px;
+    font-size: 15px;
+    position: relative;
+}
+
+.notice_more {
+    float: right;
+    cursor: pointer;
+    color: #666;
+}
+
+.notice_more:hover{
+    text-decoration: underline;
+}
+
+.sprite3 {
+    background: url('../img/market_kurly/icon.png') no-repeat -203px -168px;
+    width: 5px;
+    height: 9px;
+    float: right;
+    margin: 17px 0 0 5px;
+}
+
+.intro>ul {
+    overflow: hidden;
+}
+
+.intro>ul>li {
+    float: left;
+    margin:0 28px 25px 0;
+}
+
+.intro>ul>li>a {
+    display: block;
+}
+
+.intro_m {
+    display: none;
+}
+
+.company {
+    float: left;
+    width: 50%;
+    font-size: 14px;
+}
+
+.company strong {
+    font-size: 16px;
+    margin:8px 0px;
+    display: inline-block;
+}
+
+.company p {
+    color: #777;
+    margin-top: 10px;
+}
+
+.center {
+    width: 50%;
+    float: left;
+}
+
+.tit {
+    float: left;
+    margin-right: 20px;
+}
+
+.tit p:first-child{
+    font-size: 27px;
+    font-weight: bolder;
+}
+
+.tit p:nth-child(2),
+.tit p:nth-child(3){
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #333;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.tit2{
+}
+
+.tit2 p:nth-child(1),
+.tit2 p:nth-child(3),
+.tit2 p:nth-child(5){
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+    line-height: 20px;
+}
+
+.tit2 p:nth-child(2),
+.tit2 p:nth-child(4),
+.tit2 p:nth-child(6){
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 18px;
+}
+
+.sp {
+    width: 70px;
+    line-height: 9px;
+    margin: 12px 0 19px 0px;
+}
+
+.sprite4 {
+    background: url('../img/market_kurly/icon.png') no-repeat -203px -168px;
+    width: 5px;
+    height: 9px;
+    float: right;
+}
+
+.banner-slide {
+    width: 100%;
+    height: 567px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+}
+
+.swiper-wrapper .swiper-slide {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.swiper-wrapper .swiper-slide:nth-child(1) {
+    background-image: url(../img/market_kurly/visual.jpg);
+}
+
+.swiper-wrapper .swiper-slide:nth-child(2) {
+    background-image: url(../img/market_kurly/visual2.jpg);
+}
+
+.swiper-wrapper .swiper-slide:nth-child(3) {
+    background-image: url(../img/market_kurly/visual3.jpg);
+}
+
+.slide-page-box {
+    width: 100%;
+    max-width: 1280px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: flex-end;
+    -ms-flex-pack: flex-end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+}
+
+.slide-page-box .play-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.3);
+    position: relative;
+    cursor: pointer;
+}
+
+.slide-page-box .play-btn svg {
+    fill: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slide-page-box .slide-page {
+    position: relative;
+    height: 40px;
+    padding: 0px 15px 0 21px;
+    border-radius: 20px 0 0 20px;
+    background-color: rgba(0,0,0,.3);
+    margin-left: 10px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 17px;
+}
+
+.slide-page-box .slide-plus-button{
+    position: relative;
+    height: 40px;
+    padding: 0px 15px;
+    border-radius: 0 20px 20px 0;
+    background-color: rgba(0,0,0,.3);
+    margin-left: 3px;
+    line-height: 40px;
+    color: #fff;
+    font-size:20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+@media only screen and (max-width: 991px) {
+    .bar {
+        fill: #5e297c;
+        display: block;
+    }
+    
+    .secWrap {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 250px);
+    }
+
+    .scon-twor {
+        grid-area: 3/1/5/2;
+    }
+    
+    .NavWrap {
+        display: none;
+    }
+
+    .navLnb {
+        display: none;
+    }
+
+
+    .input {
+        display: none;
+    }
+
+    #gnb {
+        display: none;
+    }
+
+    .navGnb {
+        display: none;
+    }
+
+    .navGnb .category svg{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0
+    }
+
+    #header {
+        width: 100%;
+        height: 80px;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    /* #header {} */
+    .headerWrap {
+        margin: 0 auto;
+    }
+
+    #header>.logo {
+        width: 100px;
+        position: absolute;
+        top: 60%;
+        left: 45%;
+    }
+
+    #header .logo>a {
+        width: 100px;
+        height: 80px;
+        display: block;
+        top: 10px;
+    }
+
+    .bar {
+        display: block;
+        position: absolute;
+        top: 3px;
+        left: 5px;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .sectionWrap {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .swiper-container {
+        width: 100%;
+        height: 560px;
+        border-bottom: 1px solid #ccc;
+    }
+    .b-next, .b-prev{
+        display: none;
+    }
+
+    .swiper-wrapper .swiper-slide:nth-child(1) {
+        background: url(../img/market_kurly/visual_m.jpg) no-repeat 0 0/cover;
+
+
+    }
+
+    .swiper-wrapper .swiper-slide:nth-child(2) {
+        background: url(../img/market_kurly/visual_m2.jpg)no-repeat 0 0/cover;
+
+
+    }
+
+    .swiper-wrapper .swiper-slide:nth-child(3) {
+        background: url(../img/market_kurly/visual_m3.jpg)no-repeat 0 0/cover;
+
+
+    }
+
+    .categoryWrap {
+        display: none;
+    }
+
+    footer {
+        width: 93.75%;
+        height: 100%;
+        margin-bottom: 30px;
+    }
+
+    .intro {
+        display: none;
+    }
+
+    .company {
+        float: left;
+        width: 100%;
+    }
+
+    .center {
+        margin: 20px 0 0 15px;
+        width: 400px;
+        float: left;
+    
+    }
+}
+
+@media only screen and (max-width: 767px) {
+  
+
+    .secWrap {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 300px);
+    }
+
+    .scon-twor {
+        grid-area: 3/2/5/3;
+    }
+
+}
+
+@media only screen and (max-width: 419px) {
+
+    .secWrap {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(12, 300px);
+    }
+
+    .scon-twor {
+        grid-area: 6/1/8/2;
+    }
+
+    .swiper-wrapper .swiper-slide:nth-child(1) {
+        background: url(../img/market_kurly/vis_m.jpg)no-repeat 0 0/cover;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .swiper-wrapper .swiper-slide:nth-child(2) {
+        background: url(../img/market_kurly/vis_m2.jpg)no-repeat 0 0/cover;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .swiper-wrapper .swiper-slide:nth-child(3) {
+        background: url(../img/market_kurly/vis_m3.jpg)no-repeat 0 0/cover;
+        width: 100%;
+        height: 100%;
+
+    }
+
+}
