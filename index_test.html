@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: 김은미 포트폴리오2 ::</title>
+    <link rel="stylesheet" href="./common/css/reset.css">
+    <link rel="stylesheet" href="./common/css/style_test.css">
+    <link rel="stylesheet" href="./common/css/animate.css">
+    <link rel="stylesheet" href="./common/lib/fullpage/dist/fullpage.css">
+    <link rel="stylesheet" href="./common/lib/swiper/swiper.min.css">
+
+    <script src="./common/js/jquery-1.8.3.min.js"></script>
+    <script src="./common/lib/fullpage/dist/fullpage.js"></script>
+    <script src="./common/lib/swiper/swiper.min.js"></script>
+    <script src="./common/js/script.js"></script>
+</head>
+<style>
+
+    #wrap {position: relative; width: 1920px; margin: auto; border: 1px solid;}
+    #wrap .section.top { background-image: url(/common/img/portfolio/bg_01.png); background-size: cover;  height: 100vh;  position: relative;}
+    #wrap .section.top .top-inner { width: 1420px; display: flex; align-items: center; height: 100%; margin: auto;}
+    #wrap .section.top .top-inner h5 {font-size: 72px; font-weight: 800; line-height: 1.24; color: #671981;}
+    #wrap .section.top .top-inner .sub-title {font-weight: 300; font-size:  24px; line-height:  1.5; color: #888; margin-left: 5px; margin-top: 40px;}
+    #wrap .section.top .top-inner .astronaut { position: absolute;
+    top: 18%; left: -75px;}
+    #wrap .section.top .top-inner .astronaut img:last-of-type {position: absolute; left: 120px;-moz-animation: planet-moving 2s ease infinite;
+    -webkit-animation: planet-moving 2s ease infinite;
+    animation: planet-moving 2s ease infinite;
+    -moz-transition: all 0.2s ease;-o-transition: all 0.2s ease;-webkit-transition: all 0.2s ease;transition: all 0.2s ease;transform: rotate(-4deg);}
+    #scroll { position: absolute; left: 50%; transform: translateX(-50%); bottom: 15%; }
+    #scroll a span {position: absolute;width: 24px;height: 35px;border: 2px solid #500b70;border-radius: 50px;box-sizing: border-box;}
+    #scroll a span::before { position: absolute;top: 10px;left: 50%;content: '';width: 4px;height: 7px; background-color: #500b70;border-radius:25%; -webkit-animation: sdb10 2s infinite; animation: sdb10 2s infinite; box-sizing: border-box;}
+</style>
+<style>
+    /* planet-moving */
+
+@keyframes planet-moving {
+  0% {
+    top: -70%;
+  }
+  50% {
+    top: -65%;
+  }
+  100% {
+    top: -70%;
+  }
+}
+
+/* scroll-moving */
+
+@keyframes sdb10 {
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    transform: translate(-1.5px, -1px);
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    height: : 1px;
+    transform: translate(-1.5px, 10px);
+  }
+}
+
+
+</style>
+<body>
+    <div id="wrap">
+        <div class="section top">
+           <div class="top-inner">
+             <div class="astronaut">
+                <img src="/common/img/portfolio/astronaut_rope.gif" alt="">
+                <img src="/common/img/portfolio/astronaut.png" alt="">
+             </div>
+                <div class="title">
+                        <h5>One small step, <br> Giant leap.</h5>
+                        <div class="sub-title">당장 보기에 작은 한 걸음이지만, 인생에 있어 위대한 도약이다.<br>
+                            현실에 안주하지 않고 계속해서 발전하고 나아가는 진취적인 모습을 보여드리겠습니다.</div>
+                </div>
+                <div id="scroll">
+                    <a href="#"><span></span></a>
+                </div>
+           </div>
+        </div>
+
+
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+    </script>
+</body>
+
+</html>
