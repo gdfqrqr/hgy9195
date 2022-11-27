@@ -31,7 +31,7 @@ body {
   line-height: 1.5;
 }
 
-/* 
+
 .loader {
   height: 20px;
   width: 250px;
@@ -76,7 +76,7 @@ body {
 .loader--dot:nth-child(6) {
   background-color: rgb(252, 245, 255);
   animation-delay: 0s;
-} */
+}
 .loader--text {
   position: absolute;
   top: 200%;

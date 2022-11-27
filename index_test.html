@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,98 +12,285 @@
     <link rel="stylesheet" href="./common/lib/fullpage/dist/fullpage.css">
     <link rel="stylesheet" href="./common/lib/swiper/swiper.min.css">
 
+
     <script src="./common/js/jquery-1.8.3.min.js"></script>
     <script src="./common/lib/fullpage/dist/fullpage.js"></script>
     <script src="./common/lib/swiper/swiper.min.js"></script>
+
     <script src="./common/js/script.js"></script>
 </head>
 <style>
+    img {
+        width: 100%
+    }
 
-    #wrap {position: relative; width: 1920px; margin: auto; border: 1px solid;}
-    #wrap .section.top { background-image: url(/common/img/portfolio/bg_01.png); background-size: cover;  height: 100vh;  position: relative;}
-    #wrap .section.top .top-inner { width: 1420px; display: flex; align-items: center; height: 100%; margin: auto;}
-    #wrap .section.top .top-inner h5 {font-size: 72px; font-weight: 800; line-height: 1.24; color: #671981;}
-    #wrap .section.top .top-inner .sub-title {font-weight: 300; font-size:  24px; line-height:  1.5; color: #888; margin-left: 5px; margin-top: 40px;}
-    #wrap .section.top .top-inner .astronaut { position: absolute;
-    top: 18%; left: -75px;}
-    #wrap .section.top .top-inner .astronaut img:last-of-type {position: absolute; left: 120px;-moz-animation: planet-moving 2s ease infinite;
-    -webkit-animation: planet-moving 2s ease infinite;
-    animation: planet-moving 2s ease infinite;
-    -moz-transition: all 0.2s ease;-o-transition: all 0.2s ease;-webkit-transition: all 0.2s ease;transition: all 0.2s ease;transform: rotate(-4deg);}
-    #scroll { position: absolute; left: 50%; transform: translateX(-50%); bottom: 15%; }
-    #scroll a span {position: absolute;width: 24px;height: 35px;border: 2px solid #500b70;border-radius: 50px;box-sizing: border-box;}
-    #scroll a span::before { position: absolute;top: 10px;left: 50%;content: '';width: 4px;height: 7px; background-color: #500b70;border-radius:25%; -webkit-animation: sdb10 2s infinite; animation: sdb10 2s infinite; box-sizing: border-box;}
+    #fullpage {
+        position: relative;
+        margin: auto;
+    }
+
+    #fullpage .section.top {
+        background-image: url(/common/img/portfolio/bg_01.png);
+        background-size: cover;
+        height: 100vh;
+        position: relative;
+    }
+
+    #fullpage .section.top .top-inner {
+        width: 1420px;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        margin: auto;
+    }
+
+    #fullpage .section.top .top-inner h5 {
+        font-size: 72px;
+        font-weight: 800;
+        line-height: 1.24;
+        color: #671981;
+    }
+
+    #fullpage .section.top .top-inner .sub-title {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 1.5;
+        color: #888;
+        margin-left: 5px;
+        margin-top: 40px;
+    }
+
+    #fullpage .section.top .top-inner .astronaut {
+        position: absolute;
+        top: 18%;
+        left: -75px;
+    }
+
+    #fullpage .section.top .top-inner .astronaut img:last-of-type {
+        position: absolute;
+        left: 120px;
+        -moz-animation: planet-moving 2s ease infinite;
+        -webkit-animation: planet-moving 2s ease infinite;
+        animation: planet-moving 2s ease infinite;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        transform: rotate(-4deg);
+    }
+
+    #scroll {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 15%;
+    }
+
+    #scroll a span {
+        position: absolute;
+        width: 24px;
+        height: 35px;
+        border: 2px solid #500b70;
+        border-radius: 50px;
+        box-sizing: border-box;
+    }
+
+    #scroll a span::before {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        content: '';
+        width: 4px;
+        height: 7px;
+        background-color: #500b70;
+        border-radius: 25%;
+        -webkit-animation: sdb10 2s infinite;
+        animation: sdb10 2s infinite;
+        box-sizing: border-box;
+    }
+
+    #fullpage .section.mid {
+        height: 100vh;
+    }
+
+    @media screen and (max-width:1600px) {
+        .astronaut {
+            width: 10%;
+        }
+
+        #fullpage .section.top .top-inner {
+            width: 1280px;
+        }
+    }
 </style>
 <style>
-    /* planet-moving */
+    @keyframes planet-moving {
+        0% {
+            top: -70%;
+        }
 
-@keyframes planet-moving {
-  0% {
-    top: -70%;
-  }
-  50% {
-    top: -65%;
-  }
-  100% {
-    top: -70%;
-  }
-}
+        50% {
+            top: -65%;
+        }
 
-/* scroll-moving */
+        100% {
+            top: -70%;
+        }
+    }
 
-@keyframes sdb10 {
-  0% {
-    opacity: 0;
-  }
+    /* scroll-moving */
 
-  40% {
-    transform: translate(-1.5px, -1px);
-    opacity: 0;
-  }
+    @keyframes sdb10 {
+        0% {
+            opacity: 0;
+        }
 
-  80% {
-    opacity: 1;
-  }
+        40% {
+            transform: translate(-1.5px, -1px);
+            opacity: 0;
+        }
 
-  100% {
-    opacity: 0;
-    height: : 1px;
-    transform: translate(-1.5px, 10px);
-  }
-}
+        80% {
+            opacity: 1;
+        }
 
-
+        100% {
+            opacity: 0;
+            height: : 1px;
+            transform: translate(-1.5px, 10px);
+        }
+    }
 </style>
+
 <body>
-    <div id="wrap">
+    <div id="fullpage">
         <div class="section top">
-           <div class="top-inner">
-             <div class="astronaut">
-                <img src="/common/img/portfolio/astronaut_rope.gif" alt="">
-                <img src="/common/img/portfolio/astronaut.png" alt="">
-             </div>
+            <div class="top-inner">
+                <div class="astronaut">
+                    <img src="/common/img/portfolio/astronaut_rope.gif" alt="">
+                    <img src="/common/img/portfolio/astronaut.png" alt="">
+                </div>
                 <div class="title">
-                        <h5>One small step, <br> Giant leap.</h5>
-                        <div class="sub-title">당장 보기에 작은 한 걸음이지만, 인생에 있어 위대한 도약이다.<br>
-                            현실에 안주하지 않고 계속해서 발전하고 나아가는 진취적인 모습을 보여드리겠습니다.</div>
+                    <h5>One small step, <br> Giant leap.</h5>
+                    <div class="sub-title">당장 보기에 작은 한 걸음이지만, 인생에 있어 위대한 도약이다.<br>현실에 안주하지 않고 계속해서 발전하고 나아가는 진취적인 모습을
+                        보여드리겠습니다.
+                    </div>
                 </div>
                 <div id="scroll">
                     <a href="#"><span></span></a>
                 </div>
-           </div>
+            </div>
         </div>
 
 
 
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div class="section mid">
+            <div id="work-wrap">
+                <div class="work-image-container">
+                    <div class="work-image" id="img1">
+                        <img src="./common/img/portfolio/planet_01.png">
+                        <img src="./common/img/portfolio/market.png">
+                    </div>
+                    <div class="work-image" id="img2">
+                        <img src="./common/img/portfolio/planet_01.png">
+                        <img src="./common/img/portfolio/dongguk.png">
+                    </div>
+                    <div class="work-image" id="img3">
+                        <img src="./common/img/portfolio/planet_02.png">
+                        <img src="./common/img/portfolio/personal.png">
+                    </div>
+                    <div class="work-image" id="img4">
+                        <img src="./common/img/portfolio/planet_04.png">
+                        <img src="./common/img/portfolio/wonam.png">
+                    </div>
+                    <div class="work-image" id="img5">
+                        <img src="./common/img/portfolio/planet_02.png">
+                        <img src="./common/img/portfolio/gemma.png">
+                    </div>
+                    <div class="prev">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z" />
+                        </svg>
+                    </div>
+                    <div class="next">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div class="work-title">
+                        works
+                    </div>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" data-targetIndex="1">
+                                <div class="slide-section-title">
+                                    마켓컬리
+                                </div>
+                                <div class="slide-section-sub-title">
+                                    <p>네이버 쇼핑의 레이아웃을 참고하여 카드형 디자인으로 마켓컬리 사이트를 리뉴얼 디자인하여 반응형 홈페이지로 구현하였습니다.</p>
+                                    <p>제작기간 / 기여도</p>
+                                    <p>2020.01.22~20.02.22 / 디자인 및 코딩 100%</p>
+                                </div>
+                                <a class="swiper-slide-btn" href="./market_kurly/index.html" target="_blank">more</a>
+                            </div>
+                            <div class="swiper-slide" data-targetIndex="2">
+                                <div class="slide-section-title">
+                                    아우딘퓨쳐스 네오젠
+                                </div>
+                                <div class="slide-section-sub-title">
+                                    <p>아우딘 퓨쳐스의 브랜드 사이트인 네오젠을 자체 쇼핑몰 리뉴얼 디자인하였습니다.</p>
+                                    <p>기간 / 기여도</p>
+                                    <p>2020.11.20~20.12.05 / 디자인 100%</p>
+                                </div>
+                                <a class="swiper-slide-btn" href="./dongguk/index.html" target="_blank">more</a>
+                            </div>
+                            <div class="swiper-slide" data-targetIndex="3">
+                                <div class="slide-section-title">
+                                    아우딘퓨쳐스 중국몰
+                                </div>
+                                <div class="slide-section-sub-title">
+                                    <p>아우딘 퓨쳐스의 중국 티몰 데일리 메인페이지를 리뉴얼 디자인하였습니다..</p>
+                                    <p>제작기간 / 기여도</p>
+                                    <p>2020.12.25~21.01.10 / 디자인 및 코딩 100%</p>
+                                </div>
+                                <a class="swiper-slide-btn" href="./outin/index.html" target="_blank">more</a>
+                            </div>
+                            <div class="swiper-slide" data-targetIndex="4">
+                                <div class="slide-section-title">
+                                    원암유치원
+                                </div>
+                                <div class="slide-section-sub-title">
+                                    <p>숲 속에 산기슭에 위치한 원암유치원은 자연친화 교육중심입니다.
+                                        그에 걸맞게 안정감 주는 녹색과 유치원의 아이들 눈높이를
+                                        맞춘 아기자기한 일러스트로 디자인하였습니다. </p>
+                                    <p>제작기간 / 기여도</p>
+                                    <p>2014.04~2014.05 / 디자인 100%</p>
+                                </div>
+                                <a class="swiper-slide-btn" href="http://www.wonam.kg.kr/index.html"
+                                    target="_blank">more</a>
+                            </div>
+                            <div class="swiper-slide" data-targetIndex="5">
+                                <div class="slide-section-title">젬마마켃
+                                </div>
+                                <div class="slide-section-sub-title">
 
-
-
-
-
+                                    <p>건강기능쇼핑몰의 주 사용층의 선호에 따라 레이아웃을
+                                        배치하여 디자인 및 코딩을 하였습니다.</p>
+                                    <p>제작기간 / 기여도</p>
+                                    <p>2017.02~2017.04 / 디자인 및 코딩 70%</p>
+                                </div>
+                                <a class="swiper-slide-btn" href="./gemma.html" target="_blank">more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section"></div>
+        <div class="section"></div>
+        <div class="section"></div>
     </div>
 
 
@@ -120,27 +308,84 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script>
+
+        //**----------------------swiper ----------------------**
+        $(function () {
+            var swiperIndex = 0;
+            var swiper = new Swiper(".swiper-container", {
+                spaceBetween: 30,
+                effect: "fade",
+                loop: true,
+                allowTouchMove: false,
+                navigation: {
+                    nextEl: ".next",
+                    prevEl: ".prev"
+                },
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                on: {
+                    init: function () {
+                        var swiperCnt = 0;
+                        document.querySelectorAll('.swiper-slide').forEach(function (ele) {
+                            if (swiperCnt == 1) ele.style.opacity = '1';
+                            else ele.style.opacity = '0';
+                            swiperCnt++;
+                        });
+                    },
+                },
+            });
+
+            swiper.on("slideChange", function () {
+                var index = this.activeIndex,
+                    swiperChangeCnt = 0,
+                    indexTarget = 0;
+                document.querySelectorAll('.swiper-slide').forEach(function (ele) {
+                    if (index == swiperChangeCnt) {
+                        swiperIndex = swiperChangeCnt;
+                        ele.style.opacity = '1';
+                        indexTarget = ele.getAttribute('data-targetIndex');
+                    } else {
+                        ele.style.opacity = '0';
+                    }
+                    swiperChangeCnt++;
+                });
+
+                document.querySelectorAll('.work-image').forEach(function (ele) {
+                    ele.style.opacity = '0';
+                });
+                document.querySelectorAll('.work-image img:last-child').forEach(function (ele) {
+                    ele.style.opacity = '0';
+                    ele.style.transform = 'translateX(-110px)';
+                });
+
+                document.querySelector('#img' + indexTarget).style.opacity = '1';
+                document.querySelector('#img' + indexTarget + ' img:last-child').style.opacity = '1';
+                document.querySelector('#img' + indexTarget + ' img:last-child').style.transform =
+                    'translateX(-15px)';
+            });
+
+            //**----------------------scroll ----------------------**
+
+            $(document).on('click', '#scroll', function () {
+                $('#fp-nav ul li:nth-child(2) a .fp-sr-only').click();
+            });
+
+            $(window).on('resize', function () {
+                var swiperCnt = 0;
+                document.querySelectorAll('.swiper-slide').forEach(function (ele) {
+                    if (swiperIndex == 0) swiperIndex = 1;
+                    if (swiperIndex == swiperCnt) {
+                        ele.style.opacity = '1';
+                        indexTarget = ele.getAttribute('data-targetIndex');
+                    } else ele.style.opacity = '0';
+                    swiperCnt++;
+                });
+            });
+        });
+
 
     </script>
 </body>
